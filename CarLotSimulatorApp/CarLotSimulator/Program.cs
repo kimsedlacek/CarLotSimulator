@@ -22,7 +22,7 @@ namespace CarLotSimulator
 
 
 
-           
+
 
             //*************BONUS*************//
 
@@ -30,6 +30,8 @@ namespace CarLotSimulator
 
 
             // Dot Notation Syntax
+
+            Console.WriteLine($"There are {CarLot._numberOfCars} cars right now.");
             var theFirstCar = new Car();
 
             theFirstCar.Year = 2010;
@@ -39,7 +41,9 @@ namespace CarLotSimulator
             theFirstCar.HonkNoise = "as expected";
             theFirstCar.IsDriveable = true;
 
+            Console.WriteLine($"Now there is {CarLot._numberOfCars} car.");
             carLot.ParkingLot.Add(theFirstCar);
+            
 
             // Object Initializer Syntax
             var theSecondCar = new Car()
@@ -53,12 +57,16 @@ namespace CarLotSimulator
 
             };
 
+            Console.WriteLine($"Now there are {CarLot._numberOfCars} cars.");
             carLot.ParkingLot.Add(theSecondCar);
+            
             
             // Custom Constructor Syntax
             var theThirdCar = new Car(2015, "Dodge", "Ram 1500", "tough, like a truck", "loud", true);
 
+            Console.WriteLine($"Now there are {CarLot._numberOfCars} cars.\n");
             carLot.ParkingLot.Add(theThirdCar);
+            
 
             //*************BONUS X 2*************//
 

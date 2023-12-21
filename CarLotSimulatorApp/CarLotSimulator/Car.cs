@@ -14,7 +14,7 @@ namespace CarLotSimulator
     {
         public Car()
         {
-
+            CarLot._numberOfCars++;
         }
 
 
@@ -27,6 +27,7 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
+            CarLot._numberOfCars++;
 
         }
 
